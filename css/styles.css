@@ -1,0 +1,270 @@
+@charset "UTF-8";
+body {
+  height: 1200px; /* Para que la página sea lo suficientemente larga */
+  font-family: "comic Sans";
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f0b49e;
+}
+
+.navbar {
+  opacity: 0.8;
+}
+
+.navbar-custom {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hover-underline {
+  display: inline-block;
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hover-underline::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.card-hover-shadow {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-shadow:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.contactosection, .alineacion {
+  display: flex;
+  flex-direction: row;
+}
+
+.alineacion {
+  flex-basis: 71%;
+  flex-grow: 3;
+}
+
+.content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #ffffff;
+}
+
+.parallax {
+  height: 710px;
+  background-image: url("../assets/header2.png"); /* Segunda imagen */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f0b49e;
+}
+
+.parallax .content {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: medium;
+}
+
+.ef-parallax {
+  padding: 1rem;
+}
+
+.ef-parallax2 {
+  margin: 1rem;
+}
+
+.parallax a {
+  color: white;
+  font-size: 1rem;
+}
+
+.iconosmenu {
+  margin-top: 1rem;
+  padding: 0px 5px 0px 0px;
+  font-size: 1.3rem;
+}
+
+.contactosection, .alineacion {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar, button a {
+  text-decoration: none;
+}
+
+.comocomprar, .textarea, .claseh1, .estilo1 {
+  text-align: center;
+}
+
+.titulo {
+  margin-right: 1.5rem;
+}
+
+.iconos {
+  font-size: 21px;
+  margin-right: 35px;
+}
+
+button a {
+  color: #ffffff;
+}
+
+.navbar {
+  color: #ffffff;
+  background-color: #b7b09e;
+}
+
+.fontsize {
+  font-size: 2rem;
+}
+
+.estilo1 {
+  margin: 1rem;
+}
+
+.button {
+  --bs-btn-bg:nth($PaletaColores, 2 ) ;
+  --bs-btn-border-color:nth($PaletaColores, 2 );
+  --bs-btn-hover-border-color: nth($PaletaColores, 4 );
+  --bs-btn-hover-bg: nth($PaletaColores, 1);
+}
+
+.estilo {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 56px;
+}
+
+.iconosfooter {
+  font-size: 1.5rem;
+  margin-left: 2.5rem;
+  margin: 0.5rem;
+  display: inline;
+}
+
+.itemfooter {
+  margin-top: 4rem;
+}
+
+.claseh1 {
+  margin: 1.5rem;
+  color: #493443;
+}
+
+.pfsection {
+  padding: 3rem;
+  color: #493443;
+}
+
+.contactosection {
+  justify-content: center;
+}
+
+.contactosection h2 {
+  font-size: 1.5rem;
+  padding-top: 0.5rem;
+  color: #493443;
+}
+
+.contactosectionicono {
+  font-size: 2rem;
+  padding: 8px 19px 20px 0px;
+  color: #493443;
+}
+
+.iconoubi {
+  font-size: 3rem;
+  color: #493443;
+}
+
+.paddingh2 {
+  display: flex;
+  align-items: center;
+}
+
+.paddingh2 h2 {
+  font-size: 1.5rem;
+  color: #493443;
+}
+
+.h2 {
+  padding: 1rem;
+}
+
+.form {
+  width: 50%;
+}
+
+.classform {
+  padding: 0px 20px;
+}
+
+.buttoncontacto {
+  color: #ffffff;
+  --bs-btn-bg:nth($paletaBotones, 2 ) ;
+  --bs-btn-border-color:nth($paletaBotones, 3 );
+  --bs-btn-hover-border-color: nth($paletaBotones, 4 );
+  --bs-btn-hover-bg: nth($paletaBotones, 1);
+}
+
+.alignbutton {
+  display: flex;
+  justify-content: center;
+}
+
+.divform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonform {
+  padding-top: 1.6rem;
+}
+
+.comocomprar {
+  color: #493443;
+  margin-top: 5.4rem;
+  padding-top: 80px;
+}
+
+.colorsection {
+  color: #493443;
+}
+
+.numtamaño {
+  font-size: 1.3rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

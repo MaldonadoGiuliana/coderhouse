@@ -1,0 +1,110 @@
+//EJEMPLO CREACION DE UNA VARIABLE
+$fuenteTitulo:"comic Sans";
+$PaletaColores: #b7b09e,#493443,#eb6077,#f0b49e, #f0e2be;
+$paletaBotones:#d76f7d,#e1939d,#ebb7be,#f5dbde,#ffffff;
+$fuenteTextos:"Roboto",sans-serif;
+$positioncenter:center;
+$textocenter:center;
+
+body {
+    height: 1200px; /* Para que la página sea lo suficientemente larga */
+    font-family: $fuenteTitulo;
+    background-attachment: fixed;
+    background-position: $positioncenter;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: nth($PaletaColores, 4 );
+    
+}
+.navbar {
+    opacity: 0.8; 
+}
+.navbar-custom {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .hover-underline {
+    display: inline-block;
+    position: relative;
+    color: nth($paletaBotones,5 );
+
+    text-decoration: none;
+  }
+  .hover-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white ;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+  .hover-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .card-hover-shadow {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-hover-shadow:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+%flexrow{
+    display: flex;
+    flex-direction: row;
+}
+.alineacion{
+    flex-basis: 71%;
+    flex-grow: 3;
+    @extend %flexrow;
+}
+.content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align:$textocenter;
+    color: nth($paletaBotones, 5 );  
+}
+.parallax {
+    height: 710px;
+    background-image: url('../assets/header2.png'); /* Segunda imagen */
+    background-attachment: fixed;
+    background-position:$positioncenter;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: nth($PaletaColores, 4 );
+}
+.parallax .content {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-size: medium;
+}
+.ef-parallax{
+    padding: 1rem;
+}
+.ef-parallax2{
+    margin: 1rem;
+}
+.parallax a{
+    color: white;
+    font-size: 1rem;
+}
+
+.iconosmenu{
+    margin-top: 1rem;
+    padding: 0px 5px 0px 0px;
+    font-size: 1.3rem;
+}
+
+
+@import "_general.scss"

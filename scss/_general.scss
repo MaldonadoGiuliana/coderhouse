@@ -1,0 +1,145 @@
+$fuenteTitulo:"comic Sans";
+$PaletaColores: #b7b09e,#493443,#eb6077,#f0b49e, #f0e2be;
+$paletaBotones:#d76f7d,#e1939d,#ebb7be,#f5dbde,#ffffff;
+$fuenteTextos:"Roboto",sans-serif;
+$positioncenter:center;
+$textocenter:center;
+
+%flexrow{
+    display: flex;
+    flex-direction: row;
+}
+%tex-decoration{
+    text-decoration: none;
+}
+%tex-align{
+    text-align:center;
+}
+
+.titulo{
+    margin-right: 1.5rem;
+}
+.iconos{
+    font-size: 21px;
+    margin-right: 35px;   
+}
+button a{
+    @extend %tex-decoration;
+    color: nth($paletaBotones, 5 );
+}
+.navbar{
+    color: nth($paletaBotones, 5 );
+    background-color:nth($PaletaColores, 1 );
+    @extend %tex-decoration;
+}
+.fontsize{
+    font-size: 2rem;
+}
+.estilo1{
+    margin:1rem;
+    @extend %tex-align;
+}
+.button {
+    --bs-btn-bg:nth($PaletaColores, 2 ) ;
+    --bs-btn-border-color:nth($PaletaColores, 2 );
+    --bs-btn-hover-border-color: nth($PaletaColores, 4 );
+    --bs-btn-hover-bg: nth($PaletaColores, 1);
+}
+.estilo{
+    text-align: $textocenter; 
+    margin-top: 25px;
+    padding-top: 56px;
+}
+
+.iconosfooter{
+    font-size: 1.5rem;
+    margin-left: 2.5rem;
+    margin: 0.5rem;
+    display: inline;
+}
+.itemfooter{
+    margin-top: 4rem;
+}
+
+.claseh1{
+    margin:1.5rem;
+    @extend %tex-align;
+    color:nth($PaletaColores, 2 )
+}
+.pfsection{
+    padding: 3rem;
+    color: nth($PaletaColores, 2 )
+}
+.contactosection{
+    justify-content: $positioncenter;
+    @extend %flexrow
+}
+.contactosection h2{
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+    color: nth($PaletaColores, 2 )
+}
+.contactosectionicono{
+    font-size: 2rem;
+    padding: 8px 19px 20px 0px;
+    color: nth($PaletaColores, 2 );
+}
+.iconoubi{
+    font-size: 3rem;
+    color:nth($PaletaColores, 2 )
+}
+.paddingh2{
+    display: flex;
+    align-items: $positioncenter;
+}
+.paddingh2 h2{
+    font-size: 1.5rem;
+    color: nth($PaletaColores, 2 )
+}
+.h2{
+    padding: 1rem;
+}
+.form{
+    width: 50%;
+    
+}
+.classform{
+    padding: 0px 20px;
+}
+.buttoncontacto{
+    color:nth($paletaBotones, 5 );
+    --bs-btn-bg:nth($paletaBotones, 2 ) ;
+    --bs-btn-border-color:nth($paletaBotones, 3 );
+    --bs-btn-hover-border-color: nth($paletaBotones, 4 );
+    --bs-btn-hover-bg: nth($paletaBotones, 1);
+}
+.alignbutton{
+    display: flex;
+    justify-content:$positioncenter;
+}
+.divform{
+    display: flex;
+    flex-direction: column;
+    align-items: $textocenter;
+}
+.textarea{
+    display: flex;
+    flex-direction: column;
+    @extend %tex-align;
+}
+.buttonform{
+    padding-top: 1.6rem;
+}
+.comocomprar{
+    color:  nth($PaletaColores, 2 );
+    @extend %tex-align;
+    margin-top: 5.4rem;
+    padding-top: 80px;
+
+}
+.colorsection{
+    color: nth($PaletaColores, 2 );
+}
+.numtamaño{
+    font-size: 1.3rem;
+}
