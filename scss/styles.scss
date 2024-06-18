@@ -60,6 +60,9 @@ body {
     display: flex;
     flex-direction: row;
 }
+.divcontact{
+  @extend %flexrow
+}
 .alineacion{
     flex-basis: 71%;
     flex-grow: 3;
