@@ -165,9 +165,12 @@ button a {
   font-size: 1.5rem;
   margin-left: 2.5rem;
   margin: 0.5rem;
-  display: inline;
-}
 
+}
+.decofooter{
+  text-decoration: none;
+  color: #ffffff;
+}
 .itemfooter {
   margin-top: 4rem;
 }
