@@ -62,7 +62,10 @@ body {
 }
 .divcontact{
   @extend %flexrow
+} .divcontact{
+  align-items: $positioncenter;
 }
+
 .alineacion{
     flex-basis: 71%;
     flex-grow: 3;

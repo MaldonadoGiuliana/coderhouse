@@ -53,6 +53,7 @@ button a{
 .estilocontacto{
     margin-top: 25px;
     padding-top: 56px;
+    font-size: 3.3rem;
 }
 .iconosfooter{
     font-size: 1.5rem;
@@ -76,6 +77,9 @@ button a{
 .contactosection{
     padding-left: 4rem;
     padding-left: 58px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .contactosection h2{
     font-size: 1.5rem;

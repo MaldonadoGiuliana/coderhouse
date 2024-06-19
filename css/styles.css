@@ -80,7 +80,10 @@ body {
   background-size: cover;
   background-color: #f0b49e;
 }
-
+.parallax2 {
+ background-image: url(../assets/header3.png);
+ height: 520px;
+}
 .parallax .content {
   position: absolute;
   top: 65%;
@@ -163,6 +166,7 @@ button a {
 .estilocontacto{
   margin-top: 25px;
   padding-top: 56px;
+  font-size: 3.3rem;
 }
 .iconosfooter {
   font-size: 1.5rem;
@@ -188,10 +192,16 @@ button a {
 .contactosection {
   padding-left: 58px;
   font-size: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
+.iframecontact{
+  display: flex;
+  align-items: center;
+}
 .contactosection h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-top: 0.5rem;
   color: #493443;
 }
@@ -222,7 +232,10 @@ button a {
 }
 
 .form {
-  width: 50%;
+  width: 75%;
+}
+.text-area{
+  height: 106px;
 }
 
 .classform {
@@ -247,6 +260,7 @@ button a {
   display: flex;
   flex-direction: column;
   font-size: 1.5rem;
+  color: white;
 }
 
 .textarea {
@@ -274,6 +288,7 @@ button a {
 .divcontact{
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .sectioncontacto{
   display: flex;
@@ -282,7 +297,7 @@ button a {
 .formscontacto{
   width: 55%;
 }
-.iframecontacto{
+.iframecontact{
   display: flex;
   align-items: center;
 }
@@ -298,6 +313,39 @@ button a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+@media(max-width: 600px){
+  .contactosection{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+  }
+  .contactosection h2{
+    font-size: 1.6rem;
+  }
+  .sectioncontacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1050px;
+  }
+  .estilocontacto{
+    font-size: 2.3rem;
+  }
+  .formscontacto{
+    width: 300px;
+    padding-left: 0px;
+  }
+  .buttoncontacto{
+    width: 30%;
+  }
+  .iframecontact{
+    display: flex;
+    align-items: center;
+    height: -webkit-fill-available;
   }
 }
 
