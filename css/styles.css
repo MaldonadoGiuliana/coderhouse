@@ -226,7 +226,7 @@ button a {
 }
 
 .classform {
-  padding: 0px 47px;
+  padding-left: 2.5rem;
 }
 
 .buttoncontacto {
@@ -234,7 +234,9 @@ button a {
   border-radius: 11px;
   font-family: comic sans-serif;
   border-color: transparent;
+  width: 15%;
 }
+
 
 .alignbutton {
   display: flex;
@@ -273,7 +275,17 @@ button a {
   display: flex;
   flex-direction: row;
 }
-
+.sectioncontacto{
+  display: flex;
+  width: 100%;
+}
+.formscontacto{
+  width: 55%;
+}
+.iframecontacto{
+  display: flex;
+  align-items: center;
+}
 @media (max-width: 600px) {
   .form{
     height: 50px;
