@@ -50,7 +50,10 @@ button a{
     margin-top: 25px;
     padding-top: 56px;
 }
-
+.estilocontacto{
+    margin-top: 25px;
+    padding-top: 56px;
+}
 .iconosfooter{
     font-size: 1.5rem;
     margin-left: 2.5rem;
@@ -63,7 +66,7 @@ button a{
 
 .claseh1{
     margin:1.5rem;
-    @extend %tex-align;
+    /*@extend %tex-align;*/
     color:nth($PaletaColores, 2 )
 }
 .pfsection{
@@ -71,8 +74,8 @@ button a{
     color: nth($PaletaColores, 2 )
 }
 .contactosection{
-    justify-content: $positioncenter;
-    @extend %flexrow
+    padding-left: 4rem;
+    padding-left: 58px;
 }
 .contactosection h2{
     font-size: 1.5rem;
@@ -104,7 +107,7 @@ button a{
     
 }
 .classform{
-    padding: 0px 20px;
+    padding: 0px 47px;
 }
 .buttoncontacto{
     color:nth($paletaBotones, 5 );
@@ -112,6 +115,7 @@ button a{
     --bs-btn-border-color:nth($paletaBotones, 3 );
     --bs-btn-hover-border-color: nth($paletaBotones, 4 );
     --bs-btn-hover-bg: nth($paletaBotones, 1);
+    width: 15%;
 }
 .alignbutton{
     display: flex;
@@ -120,12 +124,11 @@ button a{
 .divform{
     display: flex;
     flex-direction: column;
-    align-items: $textocenter;
+    font-size: 1.5rem;
 }
 .textarea{
     display: flex;
     flex-direction: column;
-    @extend %tex-align;
 }
 .buttonform{
     padding-top: 1.6rem;
