@@ -169,7 +169,7 @@ button a {
 .estilo {
   text-align: center;
   margin-top: 25px;
-  padding-top: 56px;
+  padding-top: 5rem;
 }
 
 .iconosfooter {
@@ -192,10 +192,15 @@ button a {
 }
 
 .pfsection {
-  padding: 3rem;
   color: #493443;
 }
-
+.pfheight{
+  height: 870px;
+}
+.pfbutton{
+  color: white;
+  background-color: #C76C63;
+}
 .contactosection {
   justify-content: center;
 }
@@ -279,6 +284,19 @@ button a {
 
 .numtamaño {
   font-size: 1.3rem;
+}
+
+@media(max-width:600px){
+  .pfsection{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media(min-width:1000px){
+  .pfsection{
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
