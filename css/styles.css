@@ -141,23 +141,16 @@ body {
 .comocomprar, .textarea, .claseh1, .estilo1 {
   text-align: center;
 }
-
-
 .iconos {
   font-size: 21px;
   margin-right: 35px;
 }
-
 button a {
   color: #ffffff;
 }
-
-
-
 .fontsize {
   font-size: 2rem;
 }
-
 .estilo1 {
   margin: 1rem;
 }
@@ -167,16 +160,14 @@ button a {
   --bs-btn-border-color:nth($PaletaColores, 2 );
   --bs-btn-hover-border-color: nth($PaletaColores, 4 );
   --bs-btn-hover-bg: nth($PaletaColores, 1);
+  text-align: center;
 }
-
 .estilo {
   text-align: center;
   margin-top: 25px;
-  padding-top: 5rem;
 }
 .estilocontacto{
   margin-top: 25px;
-  padding-top: 56px;
   font-size: 3.3rem;
 }
 .iconosfooter {
@@ -190,9 +181,11 @@ button a {
   color: #ffffff;
 }
 .itemfooter {
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
-
+.footer{
+  padding-top: 5px;
+}
 .claseh1 {
   margin: 1.5rem;
   color: #493443;
@@ -281,26 +274,20 @@ button a {
   font-size: 1.5rem;
   color: white;
 }
-
 .textarea {
   display: flex;
   flex-direction: column;
 }
-
 .buttonform {
   padding-top: 1.6rem;
 }
-
 .comocomprar {
   color: #493443;
-  margin-top: 5.4rem;
-  padding-top: 80px;
+  margin-top: 3rem;
 }
-
 .colorsection {
   color: #493443;
 }
-
 .numtamaño {
   font-size: 1.3rem;
 }
