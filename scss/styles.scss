@@ -7,7 +7,7 @@ $positioncenter:center;
 $textocenter:center;
 
 body {
-    height: 1200px; /* Para que la página sea lo suficientemente larga */
+     /*height: 1200px; Para que la página sea lo suficientemente larga */
     font-family: $fuenteTitulo;
     background-attachment: fixed;
     background-position: $positioncenter;
@@ -60,6 +60,12 @@ body {
     display: flex;
     flex-direction: row;
 }
+.divcontact{
+  @extend %flexrow
+} .divcontact{
+  align-items: $positioncenter;
+}
+
 .alineacion{
     flex-basis: 71%;
     flex-grow: 3;

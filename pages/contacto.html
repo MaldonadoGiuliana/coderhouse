@@ -40,21 +40,26 @@
     </header>
 
     <main>
-        <h1 class="claseh1 estilo">Contacto</h1>
-        <section class="contactosection">
-            <ion-icon class="contactosectionicono" name="logo-whatsapp" ></ion-icon>
-            <h2>+54 1123456788</h2>
-        </section>
-        <section  class="contactosection">
-            <ion-icon class="contactosectionicono" name="mail-outline"></ion-icon>
-            <h2>closteria@gmail.com</h2>
-        </section>
-        <section  class="paddingh2">
-            <ion-icon class="iconoubi " name="navigate-outline"></ion-icon>
-            <h2 class="h2">Ubicación falsa 1234,Lomas de Zamora, Buenos Aires| Ubicación falsa 5678,Adrogue, Buenos Aires| Ubicación falsa 9012, Capital Federal, Buenos Aires</h2>
-        </section>
         <section>
-            <form class=" buttonform classform">
+            <div >
+                <h1 class="claseh1 estilocontacto">Contacto</h1>
+            </div>
+        </section>
+        
+        <section class="contactosection">
+            <div class="divcontact">
+                <ion-icon class="contactosectionicono" name="logo-whatsapp" ></ion-icon>
+                <h2>+54 1123456788</h2>
+            </div>
+            <div class="divcontact">
+                <ion-icon class="contactosectionicono" name="mail-outline"></ion-icon>
+                <h2>closteria@gmail.com</h2>
+            </div>
+        
+        </section>
+        
+        <section class="sectioncontacto parallax2">
+            <form class=" formscontacto buttonform classform">
                 <div class="row">
                     <div class="col buttonform  divform">
                         <label for="nombreyapellido" class="form-label">Nombre Y Apellido</label>
@@ -65,17 +70,19 @@
                     <label for="Email" class="form-label">Email</label>
                     <input type="email" class="form-control form" id="Email" placeholder="Email" aria-describedby="emailHelp">
                 </div>
-                <div class="col buttonform divform textarea">
+                <div class="col buttonform divform ">
                     <label for="Textarea" class="form-label">Mensaje</label>
-                    <textarea class="form-control form" id="Textarea" rows="3" placeholder="Ingresa tu mensaje"></textarea>
+                    <textarea class="form-control text-area form" id="Textarea" rows="3" placeholder="Ingresa tu mensaje"></textarea>
                 </div>
                 <div class="col buttonform divform">
-                    <button type="submit" class="btn btn-primary  buttoncontacto">Enviar</button>
+                    <input type="button" class="btn btn-primary  buttoncontacto" value="Enviar">
                 </div>
-                
-                </form>
-
+            </form>
+            <div class="iframecontact">
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52442.0955960461!2d-58.46104177633035!3d-34.76488764957788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd21f4ac37e4d%3A0xde41ce56577e13f1!2sUniversidad%20Nacional%20de%20Lomas%20De%20Zamora!5e0!3m2!1ses-419!2sar!4v1718820068823!5m2!1ses-419!2sar" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>
         </section>
+        
     </main>
 
 

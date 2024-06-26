@@ -17,7 +17,7 @@
   font-size: 2.5rem;
 }
 body {
-  height: 1200px; /* Para que la página sea lo suficientemente larga */
+  /* height: 1200px; Para que la página sea lo suficientemente larga */
   font-family: "comic Sans";
   background-attachment: fixed;
   background-position: center;
@@ -97,7 +97,10 @@ body {
   background-size: cover;
   background-color: #f0b49e;
 }
-
+.parallax2 {
+ background-image: url(../assets/header3.png);
+ height: 520px;
+}
 .parallax .content {
   position: absolute;
   top: 65%;
@@ -171,7 +174,11 @@ button a {
   margin-top: 25px;
   padding-top: 5rem;
 }
-
+.estilocontacto{
+  margin-top: 25px;
+  padding-top: 56px;
+  font-size: 3.3rem;
+}
 .iconosfooter {
   font-size: 1.5rem;
   margin-left: 2.5rem;
@@ -202,18 +209,25 @@ button a {
   background-color: #C76C63;
 }
 .contactosection {
-  justify-content: center;
+  padding-left: 58px;
+  font-size: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-
+.iframecontact{
+  display: flex;
+  align-items: center;
+}
 .contactosection h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-top: 0.5rem;
   color: #493443;
 }
 
 .contactosectionicono {
   font-size: 2rem;
-  padding: 8px 19px 20px 0px;
+  padding: 0px 12px;
   color: #493443;
 }
 
@@ -237,20 +251,24 @@ button a {
 }
 
 .form {
-  width: 50%;
+  width: 75%;
+}
+.text-area{
+  height: 106px;
 }
 
 .classform {
-  padding: 0px 20px;
+  padding-left: 2.5rem;
 }
 
 .buttoncontacto {
-  color: #ffffff;
-  --bs-btn-bg:nth($paletaBotones, 2 ) ;
-  --bs-btn-border-color:nth($paletaBotones, 3 );
-  --bs-btn-hover-border-color: nth($paletaBotones, 4 );
-  --bs-btn-hover-bg: nth($paletaBotones, 1);
+  background-image: linear-gradient(194deg, white, red);
+  border-radius: 11px;
+  font-family: comic sans-serif;
+  border-color: transparent;
+  width: 15%;
 }
+
 
 .alignbutton {
   display: flex;
@@ -260,7 +278,8 @@ button a {
 .divform {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  font-size: 1.5rem;
+  color: white;
 }
 
 .textarea {
@@ -284,6 +303,69 @@ button a {
 
 .numtamaño {
   font-size: 1.3rem;
+}
+.divcontact{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.sectioncontacto{
+  display: flex;
+  width: 100%;
+}
+.formscontacto{
+  width: 55%;
+}
+.iframecontact{
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  .form{
+    height: 50px;
+    width: 96%;
+  }
+  .classform{
+    font-size: 1.5rem;
+  }
+  .divform{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media(max-width: 600px){
+  .contactosection{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+  }
+  .contactosection h2{
+    font-size: 1.6rem;
+  }
+  .sectioncontacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 1050px;
+  }
+  .estilocontacto{
+    font-size: 2.3rem;
+  }
+  .formscontacto{
+    width: 300px;
+    padding-left: 0px;
+  }
+  .buttoncontacto{
+    width: 30%;
+  }
+  .iframecontact{
+    display: flex;
+    align-items: center;
+    height: -webkit-fill-available;
+  }
 }
 
 @media(max-width:600px){
