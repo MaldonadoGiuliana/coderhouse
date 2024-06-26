@@ -1,4 +1,21 @@
 @charset "UTF-8";
+*{
+  flex-grow: 0;
+  margin: 0rem;
+}
+.colornav{
+  color: #f5dbde;
+}
+.backnav{
+  background-color: #b7b09e;
+  --bs-navbar-padding-y:0;
+}
+
+.titulo{
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+}
 body {
   height: 1200px; /* Para que la página sea lo suficientemente larga */
   font-family: "comic Sans";
@@ -122,9 +139,6 @@ body {
   text-align: center;
 }
 
-.titulo {
-  margin-right: 1.5rem;
-}
 
 .iconos {
   font-size: 21px;
@@ -135,10 +149,7 @@ button a {
   color: #ffffff;
 }
 
-.navbar {
-  color: #ffffff;
-  background-color: #b7b09e;
-}
+
 
 .fontsize {
   font-size: 2rem;
